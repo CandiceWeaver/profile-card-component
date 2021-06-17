@@ -1,0 +1,67 @@
+.card {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.75rem;
+  align-self: flex-end;
+  background-image: linear-gradient(
+      360deg,
+      rgba(white, 1) 0%,
+      rgba(white, 1) 60%,
+      transparent 40%
+    ),
+    url(../images/bg-pattern-card.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__details {
+    text-align: center;
+
+    &--img {
+      border-radius: 50%;
+      border: 0.25rem solid white;
+      background-color: #fff;
+    }
+
+    &--personal {
+      display: flex;
+
+      &-name {
+        font-weight: 700;
+      }
+
+      &-age {
+        color: $colour-grey;
+        padding-left: 0.5rem;
+      }
+    }
+
+    &--location {
+      color: $colour-blue-grey;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__stats {
+    display: flex;
+    border-top: 1px solid rgba($colour-grey, 0.25);
+    width: 100%;
+    justify-content: space-around;
+    padding: 1.4rem;
+    text-align: center;
+
+    &--stat {
+      &-number {
+        font-weight: 700;
+        padding-bottom: 0.5rem;
+      }
+
+      &-name {
+        color: $colour-blue-grey;
+        font-size: 0.6rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
